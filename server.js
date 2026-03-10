@@ -29,7 +29,7 @@ app.use("/api/food", foodRoutes);
 
 // read port from environment or fallback to 3000
 const PORT = process.env.PORT || 3000;
-
-app.listen(PORT, () => {
+// ✅ Fix
+app.listen(PORT, "0.0.0.0", () => {
   console.log(`Server connected on port ${PORT}`);
 });
