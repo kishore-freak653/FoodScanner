@@ -11,6 +11,7 @@ const router = express.Router();
 
 // All routes protected — must be logged in
 router.post("/scan", protect, scanFood);
+router.post("/detect", protect, detectFood);
 router.get("/history", protect, getHistory);
 router.delete("/:id", protect, deleteRecord); // ✅ bonus
 
