@@ -4,6 +4,7 @@ import {
   scanFood,
   getHistory,
   deleteRecord,
+  detectFood,
 } from "../controllers/foodController.js";
 import { protect } from "../middleware/authMiddleware.js";
 
