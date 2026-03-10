@@ -109,6 +109,7 @@ export const deleteRecord = async (req, res) => {
 export const detectFood = async (req, res) => {
   try {
     const { image } = req.body;
+    console.log(image);
 
     if (!image) {
       return res.status(400).json({
